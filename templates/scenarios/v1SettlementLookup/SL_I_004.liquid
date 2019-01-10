@@ -1,0 +1,71 @@
+{
+  "faults": [],
+  "data": {
+    "lastFourDigits": "{{ data.lastFourDigits }}",
+    "expiryMonth": "01",
+    "expiryYear": "24",
+    "startDate": "/Date(-6847804800000+0000)/",
+    "endDate": "/Date(253402300799997+0000)/",
+    "cardType": "{{ data.cardType}}",
+    "tokens": [
+      {
+        "lastFourDigits": "{{ data.lastFourDigits }}",
+        "expiryDate": "0124",
+        "cardType": "{{ data.cardType}}",
+        "token": "f440df94-6654-48cf-91bd-f87e60ef59p1",
+        "formFactor": "Card",
+        "lastPaymentActivityDate": "/Date(1544671800000)/",
+        "lastTapOnDate": "/Date(1544628120000)/",
+        "lastTapOnLocation": "Piccadilly Gardens",
+        "denyList": {
+          "isDenyListed": true,
+          "denyListedReason": "declined_auth",
+          "totalDebtAmount": 0,
+           "history": [
+            {
+              "ActivityDateTime": "/Date(1559357587610+0000)/",
+              "Action": "add",
+              "ActionReason": "declined_auth"
+            }
+          ]
+        },
+        "travelSummary": [],
+        "inspectionTaps": [
+          {
+            "dateTime": "/Date(1579452666603+0000)/",
+            "device": "1234",
+            "totalValueRefunded": null,
+            "finalOutstandingBalance": null,
+            "process": [
+              {
+                "status": "notProcessed",
+                "outcome": "denyFail",
+                "fundRequestIdentifier": null,
+                "settlement": {},
+                "journey": []
+              }
+            ]
+          }
+        ],
+        "denyTaps": [
+              {
+                "location": "Chorlton",
+                "datetime": "/Date(1579252666603+0000)/",
+                "zone": "2",
+                "isIncomplete": false,
+                "isLate": false,
+                "isDeny": true
+              },
+              {
+                "location": "Firswood",
+                "datetime": "/Date(1579552866603+0000)/",
+                "zone": "2",
+                "isIncomplete": false,
+                "isLate": false,
+                "isDeny": true
+              }
+        ]
+      }
+    ]
+  }
+}

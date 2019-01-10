@@ -1,0 +1,190 @@
+{
+  "faults": [],
+  "data": {
+    "lastFourDigits": "{{ data.lastFourDigits }}",
+    "expiryMonth": "01",
+    "expiryYear": "24",
+    "startDate": "/Date(1518243600000)/",
+    "endDate": "/Date(1518307140000)/",
+    "cardType": "{{ data.cardType}}",
+    "tokens": [
+      {
+        "lastFourDigits": "{{ data.lastFourDigits }}",
+        "expiryDate": "0124",
+        "cardType": "{{ data.cardType}}",
+        "token": "f450df94-6654-48ef-91bd-f87e60ef59p1",
+        "formFactor": "Card",
+        "lastPaymentActivityDate": "/Date(1518406200000)/",
+        "lastTapOnDate": "/Date(1518260400000)/",
+        "lastTapOnLocation": "Ashton West",
+        "denyList": {
+          "isDenyListed": false,
+          "denyListedReason": null,
+          "totalDebtAmount": null,
+          "history": []
+        },
+        "travelSummary": [
+          {
+            "primarySettlementDate": "/Date(1518319800000)/",
+            "operationalDay": "40",
+            "latestSettlementDate": "/Date(1518406200000)/",
+            "latestJourneys": [
+              {
+                "fareRequestIdentifier": "f5bd1731-90b9-4100-a34c-860622e7fee5",
+                "status": "accepted",
+                "originalAmount": 140,
+                "finalAmount": 140,
+                "cappingAmount": 180,
+                "totalValueRefunded": 0,
+                "finalOutstandingBalance": 140,
+                "zoneMin": "3",
+                "zoneMax": "3",
+                "traversedZones": "3",
+                "isCapReach": false,
+                "isDefaultFare": false,
+                "isNotionalDebt": null,
+                "isPeak": false,
+                "tapOn": {
+                  "location": "Ashton West",
+                  "datetime": "/Date(1518260400000)/",
+                  "zone": "3",
+                  "isLate": false,
+                  "isIncomplete": false,
+                  "isDeny": false
+                },
+                "tapOff": {
+                  "location": "Droylsden",
+                  "datetime": "/Date(1518261300000)/",
+                  "zone": "3",
+                  "isIncomplete": false,
+                  "isLate": true,
+                  "isDeny": false
+                }
+              }
+            ],
+            "settlementHistory": [
+              {
+                "dateTime": "/Date(1518319800000)/",
+                "amount": 500,
+                "type": "charge",
+                "status": "accepted",
+                "isNotionalDebt": null,
+                "statementReference": "x12345-56789-yt6543-678954-tyyh361",
+                "journeys": [
+                  {
+                    "fareRequestIdentifier": "f4bd1731-90b9-4100-a34c-860622e7fee5",
+                    "reason": "defaultFare",
+                    "originalAmount": 500,
+                    "finalAmount": 500,
+                    "cappingAmount": null,
+                    "operationalDay": "40",
+                    "valueRefunded": 0,
+                    "outstandingBalance": 500,
+                    "isPeak": false,
+                    "zoneMin": "3",
+                    "zoneMax": "3",
+                    "traversedZones": "3",
+                    "isCapReach": false,
+                    "isDefaultFare": true,
+                    "tapOn": {
+                      "location": "Ashton West",
+                      "datetime": "/Date(1518260400000)/",
+                      "zone": "3",
+                      "isIncomplete": false,
+                      "isLate": false,
+                      "isDeny": false
+                    },
+                    "tapOff": {
+                      "location": null,
+                      "datetime": "/Date(1518260400000)/",
+                      "zone": null,
+                      "isLate": false,
+                      "isIncomplete": true,
+                      "isDeny": false
+                    }
+                  }
+                ]
+              },
+              {
+                "dateTime": "/Date(1518406200000)/",
+                "amount": 360,
+                "type": "refund",
+                "status": "accepted",
+                "isNotionalDebt": null,
+                "statementReference": "x12345-56789-yt6543-678954-tyyh361",
+                "journeys": [
+                  {
+                    "fareRequestIdentifier": "f5bd1731-90b9-4100-a34c-860622e7fee5",
+                    "reason": "fare",
+                    "originalAmount": 140,
+                    "finalAmount": 140,
+                    "cappingAmount": 180,
+                    "operationalDay": "40",
+                    "valueRefunded": 0,
+                    "outstandingBalance": 140,
+                    "isPeak": false,
+                    "zoneMin": "3",
+                    "zoneMax": "3",
+                    "traversedZones": "3",
+                    "isCapReach": false,
+                    "isDefaultFare": false,
+                    "tapOn": {
+                      "location": "Ashton West",
+                      "datetime": "/Date(1518260400000)/",
+                      "zone": "3",
+                      "isIncomplete": false,
+                      "isLate": false,
+                      "isDeny": false
+                    },
+                    "tapOff": {
+                      "location": "Droylsden",
+                      "datetime": "/Date(1518261300000)/",
+                      "zone": "3",
+                      "isLate": true,
+                      "isIncomplete": false,
+                      "isDeny": false
+                    }
+                  },
+                  {
+                    "fareRequestIdentifier": "f4bd1731-90b9-4100-a34c-860622e7fee5",
+                    "reason": "autoCancel",
+                    "originalAmount": 500,
+                    "finalAmount": 500,
+                    "cappingAmount": null,
+                    "operationalDay": "40",
+                    "valueRefunded": 500,
+                    "outstandingBalance": 0,
+                    "isPeak": false,
+                    "zoneMin": "3",
+                    "zoneMax": "3",
+                    "traversedZones": "3",
+                    "isCapReach": false,
+                    "isDefaultFare": true,
+                    "tapOn": {
+                      "location": "Ashton West",
+                      "datetime": "/Date(1518260400000)/",
+                      "zone": "3",
+                      "isIncomplete": false,
+                      "isLate": false,
+                      "isDeny": false
+                    },
+                    "tapOff": {
+                      "location": null,
+                      "datetime": "/Date(1518260400000)/",
+                      "zone": null,
+                      "isLate": false,
+                      "isIncomplete": true,
+                      "isDeny": false
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "inspectionTaps": [],
+        "denyTaps": []
+      }
+     ]
+  }
+}

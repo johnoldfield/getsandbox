@@ -1,0 +1,121 @@
+{
+  "faults": [],
+  "data": {
+    "lastFourDigits": "{{ data.lastFourDigits }}",
+    "expiryMonth": "01",
+    "expiryYear": "24",
+    "startDate": "/Date(1546581600000)/",
+    "endDate": "/Date(1546646340000)/",
+    "cardType": "{{ data.cardType}}",
+    "tokens": [
+      {
+        "lastFourDigits": "{{ data.lastFourDigits }}",
+        "expiryDate": "0124",
+        "cardType": "{{ data.cardType}}",
+        "token": "f440df94-5554-48ef-91bd-f87e60ef59p1",
+        "formFactor": "Card",
+        "lastPaymentActivityDate": "/Date(1546572600000)/",
+        "lastTapOnDate": "/Date(1546514100000)/",
+        "lastTapOnLocation": "Victoria",
+        "denyList": {
+          "isDenyListed": true,
+          "denyListedReason": "declined_auth ",
+          "totalDebtAmount": 0,
+          "history": [
+            {
+              "ActivityDateTime": "/Date(1546572600000)/",
+              "Action": "add",
+              "ActionType": " declined_auth"
+            }
+          ]
+        },
+        "travelSummary": [
+          {
+            "primarySettlementDate": "/Date(1546572600000)/",
+            "operationalDay": "3",
+            "latestSettlementDate": "/Date(1546572600000)/",
+            "latestJourneys": [
+              {
+                "fareRequestIdentifier": "e6bd1731-90b9-4171-a34c-860622e7fee5",
+                "status": "accepted",
+                "originalAmount": 140,
+                "finalAmount": 140,
+                "cappingAmount": 180,
+                "totalValueRefunded": 0,
+                "finalOutstandingBalance": 140,
+                "zoneMin": "1",
+                "zoneMax": "1",
+                "traversedZones": "1",
+                "isCapReach": false,
+                "isDefaultFare": false,
+                "isNotionalDebt": true,
+                "isPeak": false,
+                "tapOn": {
+                  "location": "Victoria",
+                  "datetime": "/Date(1546514100000)/",
+                  "zone": "1",
+                  "isLate": false,
+                  "isIncomplete": false,
+                  "isDeny": false
+                },
+                "tapOff": {
+                  "location": "Shudehill",
+                  "datetime": "/Date(1546514400000)/",
+                  "zone": "1",
+                  "isIncomplete": false,
+                  "isLate": false,
+                  "isDeny": false
+                }
+              }
+            ],
+            "settlementHistory": [
+              {
+                "dateTime": "/Date(1546572600000)/",
+                "amountCharged": 140,
+                "type": "charge",
+                "status": "accepted",
+                "isNotionalDebt": true,
+                "statementReference": "x12345-56789-yt6543-678954-tyyh361",
+                "journeys": [
+                  {
+                    "fareRequestIdentifier": "e6bd1731-90b9-4171-a34c-860622e7fee5",
+                    "reason": "fare",
+                    "operationalDay": "3",
+                    "originalAmount": 140,
+                    "finalAmount": 140,
+                    "cappingAmount": 180,
+                    "valueRefunded": 0,
+                    "outstandingBalance": 140,
+                    "zoneMin": "1",
+                    "zoneMax": "1",
+                    "traversedZones": "1",
+                    "isCapReach": false,
+                    "isDefaultFare": false,
+                    "isPeak": false,
+                    "tapOn": {
+                      "location": "Victoria",
+                      "datetime": "/Date(1546514100000)/",
+                      "zone": "1",
+                      "isLate": false,
+                      "isIncomplete": false,
+                      "isDeny": false
+                    },
+                    "tapOff": {
+                      "location": "Shudehill",
+                      "datetime": "/Date(1546514400000)/",
+                      "isLate": false,
+                      "zone": "1",
+                      "isIncomplete": false,
+                      "isDeny": false
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "inspectionTaps": [ ]
+      }
+    ]
+  }
+}
