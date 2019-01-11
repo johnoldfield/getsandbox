@@ -36,6 +36,9 @@ exports.get = function(req, res)
         case '1235':
             return res.render('basic/v1SettlementLookup/revenueInspectionTaps', { lastFourDigits: last4Digits, cardType: media });
             
+		case '1333':
+            return res.render('basic/v1SettlementLookup/complexSettlement', { lastFourDigits: last4Digits, cardType: media });
+            
         case '2001':
             return res.render('scenarios/v1SettlementLookup/SL_S_001', { lastFourDigits: last4Digits, cardType: media });
             
