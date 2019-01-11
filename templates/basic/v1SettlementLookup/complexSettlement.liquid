@@ -1,17 +1,17 @@
 {
   "faults": [],
   "data": {
-    "lastFourDigits": "1234",
+    "lastFourDigits": "{{ data.lastFourDigits }}",
     "expiryMonth": "01",
     "expiryYear": "24",
     "startDate": "/Date(1518243600000)/",
     "endDate": "/Date(1518307140000)/",
-    "cardType": "VISA",
+    "cardType": "{{ data.cardType}}",
     "tokens": [
       {
-        "lastFourDigits": "1234",
+        "lastFourDigits": "{{ data.lastFourDigits }}",
         "expiryDate": "0124",
-        "cardType": "VISA",
+        "cardType": "{{ data.cardType}}",
         "token": "f450df94-6654-48ef-91bd-f87e60ef59p1",
         "formFactor": "Card",
         "lastPaymentActivityDate": "/Date(1518406200000)/",
