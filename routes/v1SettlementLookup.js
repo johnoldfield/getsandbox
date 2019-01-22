@@ -107,6 +107,9 @@ exports.get = function(req, res)
             
         case '3105':
             return res.render('scenarios/v1SettlementLookup/SL_LT_005', { lastFourDigits: last4Digits, cardType: media });
+			
+        case '3108':
+            return res.render('scenarios/v1SettlementLookup/SL_LT_008', { lastFourDigits: last4Digits, cardType: media });
             
         case '3201':
             return res.render('scenarios/v1SettlementLookup/SL_I_001', { lastFourDigits: last4Digits, cardType: media });
