@@ -123,7 +123,7 @@ exports.get = function(req, res)
         case '3215':
             return res.render('scenarios/v1SettlementLookup/SL_I_015', { lastFourDigits: last4Digits, cardType: media });
 
-        case '3300':
+        case '3721':
             return res.render('scenarios/v1SettlementLookup/R_M_021', { lastFourDigits: last4Digits, cardType: media });
             
         case '4567':
