@@ -17,7 +17,7 @@ exports.post = function(req, res)
     }
     
     var token = req.body['Token'];
-    if ((token === '') || (token === null))
+    if ((token === '') || (token === null) || (token === undefined))
     {
         res.status(400);
         return res.send('NULL TOKEN SCENARIO NOT IMPLEMENTED');
