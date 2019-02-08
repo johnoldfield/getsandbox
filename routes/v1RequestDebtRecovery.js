@@ -23,9 +23,10 @@ exports.post = function(req, res)
         return res.send('NULL TOKEN SCENARIO NOT IMPLEMENTED');
     }
 
+    res.status(200)
     switch (token)
     {
-        case '':
+        case 'XXX-0000-XXX':
             return res.render('basic/v1RequestDebtRecovery/errors/invalidToken');
 
         case 'XXX-1236-FFF':
