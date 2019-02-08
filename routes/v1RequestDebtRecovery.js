@@ -30,7 +30,7 @@ exports.post = function(req, res)
             return res.render('basic/v1RequestDebtRecovery/errors/invalidToken');
 
         case 'XXX-1236-FFF':
-            return res.send('basic/v1RequestDebtRecovery/validDebtRecoveryResponse');
+            return res.render('basic/v1RequestDebtRecovery/validDebtRecoveryResponse');
 
         default:
             return res.render('basic/v1RequestDebtRecovery/errors/invalidToken')
