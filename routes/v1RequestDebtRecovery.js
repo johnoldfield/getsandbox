@@ -26,12 +26,12 @@ exports.post = function(req, res)
     switch (token)
     {
         case '':
-            return res.render('basic/v1RequestDebtRecovery/erros/invalidToken');
+            return res.render('basic/v1RequestDebtRecovery/errors/invalidToken');
 
         case 'XXX-1236-FFF':
             return res.send('VALID TOKEN SCENARIO NOT IMPLEMENTED');
 
         default:
-            return res.render('basic/v1RequestDebtRecovery/erros/invalidToken')
+            return res.render('basic/v1RequestDebtRecovery/errors/invalidToken')
     }
 }
