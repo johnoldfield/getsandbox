@@ -1,0 +1,181 @@
+{
+	"Faults": [],
+	"Data": {
+		"lastFourDigits": "{{ data.lastFourDigits }}",
+		"expiryDate": "1263",
+		"startDate": "/Date(1549411200000)/",
+		"endDate": "/Date(1549583999999)/",
+		"cardType": "{{ data.cardType }}",
+		"tokens": [
+			{
+				"lastFourDigits": "{{ data.lastFourDigits }}",
+				"expiryDate": "1263",
+				"cardType": "{{ data.cardType }}",
+				"token": "20190207103314-TOK-000000",
+				"formFactor": "card",
+				"lastPaymentActivityDate": "/Date(1549535709510)/",
+				"lastTapOnDate": "/Date(1549449164950)/",
+				"lastTapOnLocation": "Martinscroft",
+				"denyList": {
+					"isDenyListed": false,
+					"denyListedReason": "none",
+					"totalDebtAmount": 0,
+					"history": []
+				},
+				"travelSummaries": [
+					{
+						"operationalDay": 37,
+						"primarySettlementDate": "/Date(1549535709430)/",
+						"latestSettlementDate": "/Date(1549535709430)/",
+						"latestJourneys": [
+							{
+								"fareRequestIdentifier": "f5c7f55e-21be-4ba7-9cab-049b6008462e",
+								"originalAmount": 320,
+								"finalAmount": 320,
+								"cappingAmount": 380,
+								"zoneMin": 2,
+								"zoneMax": 4,
+								"traversedZones": "2,3,4",
+								"isCapReach": false,
+								"isDefaultFare": false,
+								"isPeak": false,
+								"tapOn": {
+									"location": "Martinscroft",
+									"dateTime": "/Date(1549449164950)/",
+									"zone": "4",
+									"isLate": true,
+									"isIncomplete": false,
+									"isDeny": false
+								},
+								"tapOff": {
+									"location": "Langworthy",
+									"dateTime": "/Date(1549449194950)/",
+									"zone": "2",
+									"isLate": true,
+									"isIncomplete": false,
+									"isDeny": false
+								},
+								"status": "accepted",
+								"totalValueRefunded": 0,
+								"finalOutstandingBalance": 320,
+								"isNotionalDebt": false
+							}
+						],
+						"settlementHistory": [
+							{
+								"date": "/Date(1549535709430)/",
+								"amount": 320,
+								"type": "charge",
+								"status": "accepted",
+								"statementReference": "d5bbda8a-48b8-4f23-9e51-eddf307a90ac",
+								"isNotionalDebt": false,
+								"journeys": [
+									{
+										"fareRequestIdentifier": "f5c7f55e-21be-4ba7-9cab-049b6008462e",
+										"originalAmount": 320,
+										"finalAmount": 320,
+										"cappingAmount": 380,
+										"zoneMin": 2,
+										"zoneMax": 4,
+										"traversedZones": "2,3,4",
+										"isCapReach": false,
+										"isDefaultFare": false,
+										"isPeak": false,
+										"tapOn": {
+											"location": "Martinscroft",
+											"dateTime": "/Date(1549449164950)/",
+											"zone": "4",
+											"isLate": true,
+											"isIncomplete": false,
+											"isDeny": false
+										},
+										"tapOff": {
+											"location": "Langworthy",
+											"dateTime": "/Date(1549449194950)/",
+											"zone": "2",
+											"isLate": true,
+											"isIncomplete": false,
+											"isDeny": false
+										},
+										"reason": "fare",
+										"operationalDay": 37,
+										"valueRefunded": 0,
+										"outstandingBalance": 320
+									}
+								]
+							}
+						]
+					}
+				],
+				"inspectionTaps": [
+					{
+						"dateTime": "/Date(1549449179950)/",
+						"device": "7e570000",
+						"totalValueRefunded": 3000,
+						"finalOutstandingBalance": 0,
+						"process": [
+							{
+								"status": "processed",
+								"outcome": "notTapFail",
+								"settlement": {
+									"dateTime": "/Date(1549535647043)/",
+									"amount": 3000,
+									"status": "accepted",
+									"type": "charge",
+									"reason": "penaltyFare",
+									"isNotionalDebt": false
+								},
+								"journey": null
+							},
+							{
+								"status": "processed",
+								"outcome": "pass",
+								"settlement": {
+									"dateTime": "/Date(1549535709510)/",
+									"amount": 3000,
+									"status": "accepted",
+									"type": "refund",
+									"reason": "autoRefund",
+									"isNotionalDebt": false
+								},
+								"journey": {
+									"fareRequestIdentifier": "f5c7f55e-21be-4ba7-9cab-049b6008462e",
+									"originalAmount": 320,
+									"finalAmount": 320,
+									"cappingAmount": 380,
+									"zoneMin": 2,
+									"zoneMax": 4,
+									"traversedZones": "2,3,4",
+									"isCapReach": false,
+									"isDefaultFare": false,
+									"isPeak": false,
+									"tapOn": {
+										"location": "Martinscroft",
+										"dateTime": "/Date(1549449164950)/",
+										"zone": "4",
+										"isLate": true,
+										"isIncomplete": false,
+										"isDeny": false
+									},
+									"tapOff": {
+										"location": "Langworthy",
+										"dateTime": "/Date(1549449194950)/",
+										"zone": "2",
+										"isLate": true,
+										"isIncomplete": false,
+										"isDeny": false
+									},
+									"reason": "fare",
+									"operationalDay": 37,
+									"valueRefunded": 0,
+									"outstandingBalance": 320
+								}
+							}
+						]
+					}
+				],
+				"denyTaps": []
+			}
+		]
+	}
+}

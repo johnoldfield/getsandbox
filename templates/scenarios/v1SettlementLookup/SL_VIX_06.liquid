@@ -1,0 +1,153 @@
+{
+	"Faults": [],
+	"Data": {
+		"lastFourDigits": "{{ data.lastFourDigits }}",
+		"expiryDate": "0249",
+		"startDate": "/Date(1549411200000)/",
+		"endDate": "/Date(1549583999999)/",
+		"cardType": "{{ data.cardType }}",
+		"tokens": [
+			{
+				"lastFourDigits": "{{ data.lastFourDigits }}",
+				"expiryDate": "0249",
+				"cardType": "{{ data.cardType }}",
+				"token": "20190207102705-TOK-000000",
+				"formFactor": "card",
+				"lastPaymentActivityDate": "/Date(1549535351743)/",
+				"lastTapOnDate": "/Date(1549448795140)/",
+				"lastTapOnLocation": "Victoria",
+				"denyList": {
+					"isDenyListed": true,
+					"denyListedReason": "statuslist_update_request",
+					"totalDebtAmount": 0,
+					"history": [
+						{
+							"activityDateTime": "/Date(1549535374477)/",
+							"action": "add",
+							"actionListReason": "statuslist_update_request"
+						}
+					]
+				},
+				"travelSummaries": [
+					{
+						"operationalDay": 37,
+						"primarySettlementDate": "/Date(1549535351743)/",
+						"latestSettlementDate": "/Date(1549535351743)/",
+						"latestJourneys": [
+							{
+								"fareRequestIdentifier": "20190207102705-WID-000000",
+								"originalAmount": 140,
+								"finalAmount": 140,
+								"cappingAmount": 180,
+								"zoneMin": 1,
+								"zoneMax": 1,
+								"traversedZones": "1",
+								"isCapReach": false,
+								"isDefaultFare": false,
+								"isPeak": false,
+								"tapOn": {
+									"location": "Victoria",
+									"dateTime": "/Date(1549448795140)/",
+									"zone": "1",
+									"isLate": false,
+									"isIncomplete": false,
+									"isDeny": false
+								},
+								"tapOff": {
+									"location": "Market Street",
+									"dateTime": "/Date(1549448825140)/",
+									"zone": "1",
+									"isLate": false,
+									"isIncomplete": false,
+									"isDeny": false
+								},
+								"status": "accepted",
+								"totalValueRefunded": 0,
+								"finalOutstandingBalance": 140,
+								"isNotionalDebt": false
+							}
+						],
+						"settlementHistory": [
+							{
+								"date": "/Date(1549535351743)/",
+								"amount": 140,
+								"type": "charge",
+								"status": "accepted",
+								"statementReference": "140933f4-2046-4bd7-9b03-43233e62e33f",
+								"isNotionalDebt": false,
+								"journeys": [
+									{
+										"fareRequestIdentifier": "20190207102705-WID-000000",
+										"originalAmount": 140,
+										"finalAmount": 140,
+										"cappingAmount": 180,
+										"zoneMin": 1,
+										"zoneMax": 1,
+										"traversedZones": "1",
+										"isCapReach": false,
+										"isDefaultFare": false,
+										"isPeak": false,
+										"tapOn": {
+											"location": "Victoria",
+											"dateTime": "/Date(1549448795140)/",
+											"zone": "1",
+											"isLate": false,
+											"isIncomplete": false,
+											"isDeny": false
+										},
+										"tapOff": {
+											"location": "Market Street",
+											"dateTime": "/Date(1549448825140)/",
+											"zone": "1",
+											"isLate": false,
+											"isIncomplete": false,
+											"isDeny": false
+										},
+										"reason": "fare",
+										"operationalDay": 37,
+										"valueRefunded": 0,
+										"outstandingBalance": 140
+									}
+								]
+							}
+						]
+					}
+				],
+				"inspectionTaps": [
+					{
+						"dateTime": "/Date(1549535210140)/",
+						"device": "7e570000",
+						"totalValueRefunded": 0,
+						"finalOutstandingBalance": 0,
+						"process": [
+							{
+								"status": "notProcessed",
+								"outcome": "denyFail",
+								"settlement": null,
+								"journey": null
+							}
+						]
+					}
+				],
+				"denyTaps": [
+					{
+						"location": "Firswood",
+						"dateTime": "/Date(1549535225140)/",
+						"zone": "2",
+						"isLate": false,
+						"isIncomplete": false,
+						"isDeny": true
+					},
+					{
+						"location": "Chorlton",
+						"dateTime": "/Date(1549535195140)/",
+						"zone": "2",
+						"isLate": false,
+						"isIncomplete": false,
+						"isDeny": true
+					}
+				]
+			}
+		]
+	}
+}
