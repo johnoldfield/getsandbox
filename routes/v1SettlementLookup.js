@@ -126,6 +126,31 @@ exports.get = function(req, res)
         case '3215':
             return res.render('scenarios/v1SettlementLookup/SL_I_015', { lastFourDigits: last4Digits, cardType: media });
 
+        // Real world responses provided by Vix in response to "JSON Examples v3.3.docx" - see SC-1200 for scenario details
+        case '3306':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_06', { lastFourDigits: last4Digits, cardType: media });
+
+        case '3307':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_07', { lastFourDigits: last4Digits, cardType: media });
+
+        case '3308':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_08', { lastFourDigits: last4Digits, cardType: media });
+
+        case '3309':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_09', { lastFourDigits: last4Digits, cardType: media });
+
+        case '3311':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_11', { lastFourDigits: last4Digits, cardType: media });
+            
+        case '3312':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_12', { lastFourDigits: last4Digits, cardType: media });
+            
+        case '3313':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_13', { lastFourDigits: last4Digits, cardType: media });
+
+        case '3314':
+            return res.render('scenarios/v1SettlementLookup/SL_VIX_14', { lastFourDigits: last4Digits, cardType: media });
+
         case '3721':
             return res.render('scenarios/v1SettlementLookup/R_M_021', { lastFourDigits: last4Digits, cardType: media });
             
