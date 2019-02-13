@@ -126,6 +126,18 @@ exports.get = function(req, res)
         case '3215':
             return res.render('scenarios/v1SettlementLookup/SL_I_015', { lastFourDigits: last4Digits, cardType: media });
 
+        case '3721':
+            return res.render('scenarios/v1SettlementLookup/R_M_021', { lastFourDigits: last4Digits, cardType: media });
+            
+        case '4567':
+            return res.render('basic/v1SettlementLookup/invalidFundRequest', { lastFourDigits: last4Digits, cardType: media });
+        
+        case '6791':
+            return res.render('basic/v1SettlementLookup/useDifferentDates', { lastFourDigits: last4Digits, cardType: media });
+            
+        case '7777':
+            return res.render('basic/v1SettlementLookup/manualDenyListToken', { lastFourDigits: last4Digits, cardType: media });
+
         // Real world responses provided by Vix in response to "JSON Examples v3.3.docx" - see SC-1200 for scenario details
         case '8006':
             return res.render('scenarios/v1SettlementLookup/SL_VIX_06', { lastFourDigits: last4Digits, cardType: media });
@@ -150,18 +162,6 @@ exports.get = function(req, res)
 
         case '8014':
             return res.render('scenarios/v1SettlementLookup/SL_VIX_14', { lastFourDigits: last4Digits, cardType: media });
-
-        case '3721':
-            return res.render('scenarios/v1SettlementLookup/R_M_021', { lastFourDigits: last4Digits, cardType: media });
-            
-        case '4567':
-            return res.render('basic/v1SettlementLookup/invalidFundRequest', { lastFourDigits: last4Digits, cardType: media });
-        
-        case '6791':
-            return res.render('basic/v1SettlementLookup/useDifferentDates', { lastFourDigits: last4Digits, cardType: media });
-            
-        case '7777':
-            return res.render('basic/v1SettlementLookup/manualDenyListToken', { lastFourDigits: last4Digits, cardType: media });
         
         case '9999':
             return res.render('basic/v1SettlementLookup/noData', { lastFourDigits: last4Digits, cardType: media });
