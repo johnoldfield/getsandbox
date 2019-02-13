@@ -1,16 +1,16 @@
 {
 	"Faults": [],
 	"Data": {
-		"lastFourDigits": "6559",
+		"lastFourDigits": "{{ data.lastFourDigits }}",
 		"expiryDate": "0609",
 		"startDate": "/Date(1548633600000)/",
 		"endDate": "/Date(1549756799999)/",
-		"cardType": "mastercard",
+		"cardType": "{{ data.cardType }}",
 		"tokens": [
 			{
-				"lastFourDigits": "6559",
+				"lastFourDigits": "{{ data.lastFourDigits }}",
 				"expiryDate": "0609",
-				"cardType": "mastercard",
+				"cardType": "{{ data.cardType }}",
 				"token": "20190207103515-TOK-000000",
 				"formFactor": "card",
 				"lastPaymentActivityDate": "/Date(1549535951437)/",
@@ -441,9 +441,9 @@
 				"denyTaps": []
 			},
 			{
-				"lastFourDigits": "6559",
+				"lastFourDigits": "{{ data.lastFourDigits }}",
 				"expiryDate": "0609",
-				"cardType": "mastercard",
+				"cardType": "{{ data.cardType }}",
 				"token": "20190207103515-TOK-000001",
 				"formFactor": "card",
 				"lastPaymentActivityDate": "/Date(1549535920780)/",
