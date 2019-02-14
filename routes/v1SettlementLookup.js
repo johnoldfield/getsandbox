@@ -29,6 +29,9 @@ exports.get = function(req, res)
     {
         case '1222':
             return res.render('basic/v1SettlementLookup/dualToken', { lastFourDigits: last4Digits, cardType: media });
+			
+        case '1224':
+            return res.render('basic/v1SettlementLookup/fourToken', { lastFourDigits: last4Digits, cardType: media });
         
         case '1234':
             return res.render('basic/v1SettlementLookup/singleJourney', { lastFourDigits: last4Digits, cardType: media });
