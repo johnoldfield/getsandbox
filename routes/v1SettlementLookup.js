@@ -42,6 +42,9 @@ exports.get = function(req, res)
         case '1333':
             return res.render('basic/v1SettlementLookup/complexSettlement', { lastFourDigits: last4Digits, cardType: media });
 
+        case '1650':
+            return res.render('basic/v1SettlementLookup/debtRecoveryValid', { lastFourDigits: last4Digits, cardType: media });
+            
         case '1656':
             return res.render('basic/v1SettlementLookup/debtRecoveryFailure', { lastFourDigits: last4Digits, cardType: media });
 
