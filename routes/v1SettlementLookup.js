@@ -39,12 +39,14 @@ exports.get = function(req, res)
         case '1235':
             return res.render('basic/v1SettlementLookup/revenueInspectionTaps', { lastFourDigits: last4Digits, cardType: media });
             
-		case '1333':
+        case '1333':
             return res.render('basic/v1SettlementLookup/complexSettlement', { lastFourDigits: last4Digits, cardType: media });
+
         case '1656':
             return res.render('basic/v1SettlementLookup/debtRecoveryFailure', { lastFourDigits: last4Digits, cardType: media });
-		case '1666':
-			res.status(400);
+
+        case '1666':
+            res.status(400);
             return res.render('basic/v1SettlementLookup/errors/invalidMediaType');
             
         case '2001':
@@ -148,32 +150,45 @@ exports.get = function(req, res)
 
         // Real world responses provided by Vix in response to "JSON Examples v3.3.docx" - see SC-1200 for scenario details
         case '8006':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_06', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_I_004.Vix', { lastFourDigits: last4Digits, cardType: media });
 
         case '8007':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_07', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_I_011.Vix', { lastFourDigits: last4Digits, cardType: media });
 
         case '8008':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_08', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_R_005.Vix', { lastFourDigits: last4Digits, cardType: media });
 
         case '8009':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_09', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_LT_013.Vix', { lastFourDigits: last4Digits, cardType: media });
 
         case '8011':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_11', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_FA_001.Vix', { lastFourDigits: last4Digits, cardType: media });
             
         case '8012':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_12', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_FA_004.Vix', { lastFourDigits: last4Digits, cardType: media });
             
         case '8013':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_13', { lastFourDigits: last4Digits, cardType: media });
+            return res.render('scenarios/v1SettlementLookup/SL_FA_006.Vix', { lastFourDigits: last4Digits, cardType: media });
 
         case '8014':
-            return res.render('scenarios/v1SettlementLookup/SL_VIX_14', { lastFourDigits: last4Digits, cardType: media });
-        
+            return res.render('scenarios/v1SettlementLookup/SL_RS_001.Vix', { lastFourDigits: last4Digits, cardType: media });
+
+        // Real world examples from Vix - see SC-1208
+        case '8101':
+            return res.render('scenarios/v1SettlementLookup/SL_S_001.Vix', { lastFourDigits: last4Digits, cardType: media });
+
+        case '8102':
+            return res.render('scenarios/v1SettlementLookup/SL_S_002.Vix', { lastFourDigits: last4Digits, cardType: media });
+
+        case '8104':
+            return res.render('scenarios/v1SettlementLookup/SL_S_004.Vix', { lastFourDigits: last4Digits, cardType: media });
+
+        case '8108':
+            return res.render('scenarios/v1SettlementLookup/SL_S_008.Vix', { lastFourDigits: last4Digits, cardType: media });
+
         case '9999':
             return res.render('basic/v1SettlementLookup/noData', { lastFourDigits: last4Digits, cardType: media });
-            
+
         default:
             return res.render('basic/v1SettlementLookup/noData', { lastFourDigits: last4Digits, cardType: media });
     }

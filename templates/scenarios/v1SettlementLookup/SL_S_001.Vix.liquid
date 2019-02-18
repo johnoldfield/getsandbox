@@ -1,0 +1,115 @@
+{
+   "Faults" : [ ],
+   "Data" : {
+      "lastFourDigits" : "{{ data.lastFourDigits }}",
+      "expiryDate" : "1225",
+      "startDate" : "/Date(1550016000000)/",
+      "endDate" : "/Date(1550102399999)/",
+      "cardType" : "mastercard",
+      "tokens" : [
+         {
+            "lastFourDigits" : "{{ data.lastFourDigits }}",
+            "expiryDate" : "1225",
+            "cardType" : "{{ data.cardType }}",
+            "token" : "28875",
+            "formFactor" : "card",
+            "lastPaymentActivityDate" : "/Date(1550058210000)/",
+            "lastTapOnDate" : "/Date(1550057946000)/",
+            "lastTapOnLocation" : "Derker",
+            "denyList" : {
+               "isDenyListed" : false,
+               "denyListedReason" : "none",
+               "totalDebtAmount" : 0,
+               "history" : [ ]
+            },
+            "travelSummaries" : [
+               {
+                  "operationalDay" : 44,
+                  "primarySettlementDate" : "/Date(1550058210000)/",
+                  "latestSettlementDate" : "/Date(1550058210000)/",
+                  "latestJourneys" : [
+                     {
+                        "fareRequestIdentifier" : "fd22ad00-2f83-11e9-ae1d-bdee76e6bd0a",
+                        "originalAmount" : 380,
+                        "finalAmount" : 380,
+                        "cappingAmount" : 420,
+                        "zoneMin" : 1,
+                        "zoneMax" : 3,
+                        "traversedZones" : "1,2,3",
+                        "isCapReach" : false,
+                        "isDefaultFare" : false,
+                        "isPeak" : false,
+                        "tapOn" : {
+                           "location" : "Derker",
+                           "dateTime" : "/Date(1550057946000)/",
+                           "zone" : "3/4",
+                           "isLate" : false,
+                           "isIncomplete" : false,
+                           "isDeny" : false
+                        },
+                        "tapOff" : {
+                           "location" : "Velopark",
+                           "dateTime" : "/Date(1550058007000)/",
+                           "zone" : "2",
+                           "isLate" : false,
+                           "isIncomplete" : false,
+                           "isDeny" : false
+                        },
+                        "status" : "accepted",
+                        "totalValueRefunded" : 0,
+                        "finalOutstandingBalance" : 380,
+                        "isNotionalDebt" : false
+                     }
+                  ],
+                  "settlementHistory" : [
+                     {
+                        "date" : "/Date(1550058210000)/",
+                        "amount" : 380,
+                        "type" : "charge",
+                        "status" : "accepted",
+                        "statementReference" : "862c962e-a729-4a74-9ac1-96073bcbf4cb",
+                        "isNotionalDebt" : false,
+                        "journeys" : [
+                           {
+                              "fareRequestIdentifier" : "fd22ad00-2f83-11e9-ae1d-bdee76e6bd0a",
+                              "originalAmount" : 380,
+                              "finalAmount" : 380,
+                              "cappingAmount" : 420,
+                              "zoneMin" : 1,
+                              "zoneMax" : 3,
+                              "traversedZones" : "1,2,3",
+                              "isCapReach" : false,
+                              "isDefaultFare" : false,
+                              "isPeak" : false,
+                              "tapOn" : {
+                                 "location" : "Derker",
+                                 "dateTime" : "/Date(1550057946000)/",
+                                 "zone" : "3/4",
+                                 "isLate" : false,
+                                 "isIncomplete" : false,
+                                 "isDeny" : false
+                              },
+                              "tapOff" : {
+                                 "location" : "Velopark",
+                                 "dateTime" : "/Date(1550058007000)/",
+                                 "zone" : "2",
+                                 "isLate" : false,
+                                 "isIncomplete" : false,
+                                 "isDeny" : false
+                              },
+                              "reason" : "fare",
+                              "operationalDay" : 44,
+                              "valueRefunded" : 0,
+                              "outstandingBalance" : 380
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ],
+            "inspectionTaps" : [ ],
+            "denyTaps" : [ ]
+         }
+      ]
+   }
+}
