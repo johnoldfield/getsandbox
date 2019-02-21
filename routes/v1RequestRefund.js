@@ -16,9 +16,9 @@ exports.post = function(req, res)
         return res.render('basic/v1Common/errors/invalidHeader');
     }
     
-    var tokenID = req.body['token'];
-    var refundRequestidentifier = req.body['fareRequestIdentifier'];
-    var amount = req.body['refundedAmount'];
+    var tokenID = req.body['Token'];
+    var refundRequestidentifier = req.body['FundRequestIdentifier'];
+    var amount = req.body['RefundedAmount'];
     
     if (refundRequestidentifier == '1234567')
     {
