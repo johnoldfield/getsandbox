@@ -51,6 +51,9 @@ exports.get = function(req, res)
         case '1666':
             res.status(400);
             return res.render('basic/v1SettlementLookup/errors/invalidMediaType');
+
+        case '1667':
+            return res.render('basic/v1SettlementLookup/caseSensitivity', { lastFourDigits: last4Digits, cardType: media });
             
         case '2001':
             return res.render('scenarios/v1SettlementLookup/SL_S_001', { lastFourDigits: last4Digits, cardType: media });
